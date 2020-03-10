@@ -6,28 +6,22 @@ public class CriaConta {
         Conta segundaConta = new Conta();
         System.out.println("Endereço de memória: " + segundaConta);
 
-        primeiraConta.saldo = 200.0;
+        primeiraConta.deposita(200.0);
+        System.out.println("\n*********************** BYTEBANK ***********************");
+        primeiraConta.impressao();
+        segundaConta.impressao();
+        System.out.println("\n********************************************************");
+
+        primeiraConta.deposita(100.0);
         System.out.println("\n************** BYTEBANK **************");
-        System.out.println("\n\tTitular:\t" + primeiraConta.titular);
-        System.out.println("\n\tAgência:\t" + primeiraConta.agencia);
-        System.out.println("\tConta:\t\t" + primeiraConta.numero);
-        System.out.println("\n\tSaldo:\t\tR$ " + primeiraConta.saldo + "0");
+        primeiraConta.impressao();
+        segundaConta.impressao();
         System.out.println("\n**************************************");
 
-        primeiraConta.saldo += 100.0;
+        segundaConta.deposita(50.0);
         System.out.println("\n************** BYTEBANK **************");
-        System.out.println("\n\tTitular:\t" + primeiraConta.titular);
-        System.out.println("\n\tAgência:\t" + primeiraConta.agencia);
-        System.out.println("\tConta:\t\t" + primeiraConta.numero);
-        System.out.println("\n\tSaldo:\t\tR$ " + primeiraConta.saldo + "0");
-        System.out.println("\n**************************************");
-
-        segundaConta.saldo = 50.0;
-        System.out.println("\n************** BYTEBANK **************");
-        System.out.println("\n\tTitular:\t" + segundaConta.titular);
-        System.out.println("\n\tAgência:\t" + segundaConta.agencia);
-        System.out.println("\tConta:\t\t" + segundaConta.numero);
-        System.out.println("\n\tSaldo:\t\tR$ " + segundaConta.saldo + "0");
+        primeiraConta.impressao();
+        segundaConta.impressao();
         System.out.println("\n**************************************");
     }
 

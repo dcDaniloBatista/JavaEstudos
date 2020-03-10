@@ -1,9 +1,9 @@
 public class Conta {
 
-    int agencia;
-    int numero;
-    Cliente titular;
-    double saldo;
+    private int agencia;
+    private int numero;
+    private Cliente titular;
+    private double saldo;
 
     public void deposita(double valor){
         this.saldo += valor;
@@ -35,10 +35,40 @@ public class Conta {
     }
 
     public void impressao(){
-        System.out.println("\n\tTitular:\t" + this.titular.nome);
-        System.out.println("\n\tAgência:\t" + this.agencia);
-        System.out.println("\tConta:\t\t" + this.numero);
-        System.out.println("\n\tSaldo:\t\tR$ " + this.saldo + "0\n");
+        System.out.println("\n\tTitular:\t" + titular.getNome());
+        System.out.println("\n\tCPF:\t\t" + titular.getCpf());
+        System.out.println("\n\tProfissão:\t" + titular.getProfissao());
+        System.out.println("\n\tAgência:\t" + getAgencia());
+        System.out.println("\tConta:\t\t" + getNumero());
+        System.out.println("\n\tSaldo:\t\tR$ " + getSaldo() + "0\n");
+    }
+
+    public double getSaldo(){
+        return this.saldo;
+    }
+
+    public void setNumero(int numero){
+        this.numero = numero;
+    }
+
+    public double getNumero(){
+        return this.numero;
+    }
+
+    public void setAgencia(int agencia){
+        this.agencia = agencia;
+    }
+
+    public double getAgencia(){
+        return this.agencia;
+    }
+
+    public void setTitular(Cliente titular){
+        this.titular = titular;
+    }
+
+    public Cliente getTitular(){
+        return this.titular;
     }
 
 }

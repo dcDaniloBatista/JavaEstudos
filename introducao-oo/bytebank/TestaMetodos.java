@@ -3,20 +3,24 @@ public class TestaMetodos {
     public static void main(String[] args) {
         
         Conta contaInicial = new Conta();
-        contaInicial.titular = new Cliente();
+        Cliente contaTitular = new Cliente();
 
-        contaInicial.titular.nome = "Danilo Batista";
-        contaInicial.agencia = 11112;
-        contaInicial.numero = 555556;
-        contaInicial.saldo = 0;
+        contaInicial.setTitular(contaTitular);
+        
+        contaTitular.setNome("Danilo Batista");
+        contaTitular.setCpf("12345678900");
+        contaTitular.setProfissao("Designer");
+        contaInicial.setAgencia(11112);
+        contaInicial.setNumero(555556);
 
         Conta contaDestino = new Conta();
-        contaDestino.titular = new Cliente();
-        
-        contaDestino.titular.nome = "Julio Silva";
-        contaDestino.agencia = 44445;
-        contaDestino.numero = 99990;
-        contaDestino.saldo = 0;
+        Cliente contaTitularDestino = new Cliente();
+
+        contaTitularDestino.setNome("Julio Silva");
+        contaTitularDestino.setCpf("98765432100");
+        contaTitularDestino.setProfissao("Desenvolvedor");
+        contaDestino.setAgencia(44445);
+        contaDestino.setNumero(99990);
 
         System.out.println("\n*********************** BYTEBANK ***********************");
         contaInicial.impressao();
