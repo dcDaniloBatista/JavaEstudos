@@ -1,7 +1,4 @@
-# Java: primeiros passos
+# Java: introdução à orientação a objetos
 
-> Escrevendo nosso primeiro código.
-> Tipos e variáveis.
-> Trabalhando com caracteres.
-> Praticando condicionais.
-> Controlando fluxo com laços.
+> Introdução à Orientação a Objetos.
+> Definindo comportamento.
