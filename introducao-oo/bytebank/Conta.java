@@ -2,7 +2,7 @@ public class Conta {
 
     int agencia;
     int numero;
-    String titular;
+    Cliente titular;
     double saldo;
 
     public void deposita(double valor){
@@ -35,7 +35,7 @@ public class Conta {
     }
 
     public void impressao(){
-        System.out.println("\n\tTitular:\t" + this.titular);
+        System.out.println("\n\tTitular:\t" + this.titular.nome);
         System.out.println("\n\tAgência:\t" + this.agencia);
         System.out.println("\tConta:\t\t" + this.numero);
         System.out.println("\n\tSaldo:\t\tR$ " + this.saldo + "0\n");
