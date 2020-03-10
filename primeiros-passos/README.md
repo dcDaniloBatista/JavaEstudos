@@ -4,3 +4,4 @@
 > Tipos e variáveis.
 > Trabalhando com caracteres.
 > Praticando condicionais.
+> Controlando fluxo com laços.
